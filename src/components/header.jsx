@@ -1,24 +1,19 @@
-import PropTypes from 'prop-types'
-import React from 'react'
+import React, { useState } from 'react'
+import ContactButton from '../components/contactButton'
+import ContactModal from '../components/contactModal'
 
-const Header = ({ siteTitle }) => (
-  <header>
-    <div className="container mx-auto px-4 py-2 flex justify-between items-center">
+const Header = ({ siteTitle }) => {
+  const [showModal, toggleModal] = useState(false)
+
+  return (
+    <header className="fixed inset-x-0 mb-16 container mx-auto px-4 py-2 bg-gray-900 flex justify-between items-center">
       <h1>{siteTitle}</h1>
 
-      <button className="text-yellow-500 border border-yellow-500 py-2 px-4 rounded bg-transparent hover:bg-yellow-500 hover:text-gray-900">
-        Contact me
-      </button>
-    </div>
-  </header>
-)
+      <ContactButton handleClick={() => toggleModal(true)} />
 
-Header.propTypes = {
-  siteTitle: PropTypes.string,
-}
-
-Header.defaultProps = {
-  siteTitle: ``,
+      <ContactModal show={showModal} handleClick={() => toggleModal(false)} />
+    </header>
+  )
 }
 
 export default Header
