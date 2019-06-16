@@ -90,7 +90,7 @@ const IndexPage = () => (
       </div>
     </Section>
 
-    <Section title="Skills">
+    <Section title="Skills" lastSection>
       <div className="md:flex">
         <div className="md:w-1/3 md:pr-2">
           <Skill title="JavaScript (ES6, React, Vue)" />

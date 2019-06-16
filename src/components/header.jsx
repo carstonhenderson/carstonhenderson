@@ -6,7 +6,7 @@ const Header = ({ siteTitle }) => {
   const [showModal, toggleModal] = useState(false)
 
   return (
-    <header className="fixed inset-x-0 mb-16 container mx-auto px-4 py-2 bg-gray-900 flex justify-between items-center">
+    <header className="inset-x-0 mb-16 container mx-auto px-4 py-2 bg-gray-900 flex justify-between items-center">
       <h1>{siteTitle}</h1>
 
       <ContactModal show={showModal} handleClick={() => toggleModal(false)} />
