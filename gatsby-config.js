@@ -3,6 +3,7 @@ module.exports = {
     title: `Carston Henderson`,
     description: `A site about Carston Henderson.`,
     author: `Carston Henderson`,
+    siteUrl: 'https://carstonhenderson.surge.sh',
   },
   plugins: [
     {
@@ -32,6 +33,23 @@ module.exports = {
         display: `minimal-ui`,
         icon: `src/images/icon.png`, // This path is relative to the root of the site.
       },
+    },
+    {
+      resolve: 'gatsby-plugin-web-font-loader',
+      options: {
+        google: {
+          families: ['Poppins'],
+          urls: ['/fonts.css']
+        }
+      }
+    },
+    {
+      resolve: 'gatsby-plugin-robots-txt',
+      options: {
+        host: 'https://carston.henderson.surge.sh',
+        sitemap: 'https://carstonhenderson.surge.sh/sitemap.xml',
+        policy: [{ userAgent: '*', disallow: '' }]
+      }
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
