@@ -9,9 +9,10 @@ const Header = ({ siteTitle }) => {
     <header className="fixed inset-x-0 mb-16 container mx-auto px-4 py-2 bg-gray-900 flex justify-between items-center">
       <h1>{siteTitle}</h1>
 
+      <ContactModal show={showModal} handleClick={() => toggleModal(false)} />
+      
       <ContactButton handleClick={() => toggleModal(true)} />
 
-      <ContactModal show={showModal} handleClick={() => toggleModal(false)} />
     </header>
   )
 }

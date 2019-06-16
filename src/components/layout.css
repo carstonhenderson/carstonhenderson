@@ -6,6 +6,10 @@ html {
     font-family: Poppins;
 }
 
+.translate-center {
+    transform: translate(-50%,-50%);
+}
+
 @tailwind components;
 
 @tailwind utilities;
