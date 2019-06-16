@@ -37,7 +37,7 @@ const IndexPage = () => (
         startDate="February 2017"
         endDate="March 2019"
         details={[
-          'full-stack developmentusing Laravel, Javascript, Sass, and MySQL',
+          'full-stack development using Laravel, Javascript, Sass, and MySQL',
           'agile development in a team environment using Git and Jira',
           'collaboration with partner companies building integrations',
         ]}
