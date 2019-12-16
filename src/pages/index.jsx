@@ -13,7 +13,7 @@ const IndexPage = () => (
 
     <Hero
       header="Nice to meet you. 🤝"
-      content="I'm a dad, developer, and cat enthusiast in the Salt Lake City area. In my
+      content="I'm a dad, developer, and cat enthusiast in Farmington, Utah. In my
       spare time I enjoy tennis, video games, and vacuuming. I'm also a sports
       fanatic - I love the Utah Jazz and college football Saturdays. Go Utes!"
     />
@@ -23,9 +23,9 @@ const IndexPage = () => (
         title="Front-end Developer"
         company="Clearlink"
         startDate="April 2019"
-        endDate="Present"
+        endDate="October 2019"
         details={[
-          'front-end development using JavaScript, Sass, and Wordpress',
+          'front-end development using JavaScript, Sass, and PHP',
           'focus on SEO and performance',
           'sprint-based development on a large team with multiple projects',
         ]}
@@ -93,15 +93,15 @@ const IndexPage = () => (
     <Section title="Skills" lastSection>
       <div className="md:flex">
         <div className="md:w-1/3 md:pr-2">
-          <Skill title="JavaScript (ES6, React, Vue)" />
+          <Skill title="JavaScript (ES6, React, Gatsby, Emotion)" />
         </div>
 
         <div className="md:w-1/3 md:px-2">
-        <Skill title="PHP (Laravel)" />
+          <Skill title="PHP (Laravel)" />
         </div>
 
         <div className="md:w-1/3 md:pl-2">
-        <Skill title="SQL (PostgreSQL, MySQL)" />
+          <Skill title="SQL (PostgreSQL, MySQL)" />
         </div>
       </div>
     </Section>
