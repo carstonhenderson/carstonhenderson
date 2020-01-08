@@ -39,6 +39,16 @@ const ContactModal = ({ handleClick, show }) => (
             </a>
           </div>
 
+          <p>
+            Or just email me at{' '}
+            <a
+              href="mailto:carstonhenderson@icloud.com"
+              className="text-blue-300 hover:text-blue-500 underline"
+            >
+              carstonhenderson@icloud.com.
+            </a>
+          </p>
+
           <button
             className="text-yellow-500 border border-yellow-500 py-2 px-4 rounded bg-gray-900 hover:bg-yellow-500 hover:text-gray-900 float-right"
             onClick={handleClick}
