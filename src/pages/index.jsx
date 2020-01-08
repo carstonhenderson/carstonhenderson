@@ -6,6 +6,7 @@ import Section from '../components/section'
 import Job from '../components/job'
 import Degree from '../components/degree'
 import Skill from '../components/skill'
+import Project from '../components/project'
 
 const IndexPage = () => (
   <Layout>
@@ -21,9 +22,21 @@ const IndexPage = () => (
     <Section title="Experience">
       <Job
         title="Front-end Developer"
+        company="Kodia"
+        startDate="August 2019"
+        endDate="Present"
+        details={[
+          'freelance web development team for clients',
+          'focus on JAMstack technologies such as Gatsby/React, GraphQL, and Netlify',
+          'headless CMS integrations such as Contentful and Netlify CMS',
+        ]}
+      />
+
+      <Job
+        title="Front-end Developer"
         company="Clearlink"
         startDate="April 2019"
-        endDate="October 2019"
+        endDate="Present"
         details={[
           'front-end development using JavaScript, Sass, and PHP',
           'focus on SEO and performance',
@@ -90,7 +103,7 @@ const IndexPage = () => (
       </div>
     </Section>
 
-    <Section title="Skills" lastSection>
+    <Section title="Skills">
       <div className="md:flex">
         <div className="md:w-1/3 md:pr-2">
           <Skill title="JavaScript (ES6, React, Gatsby, Emotion)" />
@@ -104,6 +117,26 @@ const IndexPage = () => (
           <Skill title="SQL (PostgreSQL, MySQL)" />
         </div>
       </div>
+    </Section>
+
+    <Section title="Portfolio" lastSection>
+      <Project
+        title="Establish Design"
+        url="https://establishdesign.com"
+        description="A website and blog built for Establish Design, an architectural and interior design company located in Salt Lake City, Utah. Brought their Lighthouse audit performance score from 4 to 100. Built with Gatsby, Emotion, and Contentful, and deployed with Netlify."
+      />
+
+      <Project
+        title="Gallant Calculator"
+        url="https://gallant-calculator.netlify.com"
+        description="A basic calculator PWA. Built with Gatsby, Tailwind, and Framer Motion, and deployed with Netlify."
+      />
+
+      <Project
+        title="Kanto Pokedex"
+        url="https://kanto-pokedex.netlify.com"
+        description="A Pokedex PWA for Kanto region Pokemon. Built with Gatsby and Tailwind, and deployed with Netlify."
+      />
     </Section>
   </Layout>
 )
