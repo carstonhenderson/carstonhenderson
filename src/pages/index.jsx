@@ -82,41 +82,25 @@ const IndexPage = () => (
     </Section>
 
     <Section title="Education">
-      <div className="md:flex">
-        <div className="md:w-1/2 md:pr-2">
-          <Degree
-            major="Computer Science"
-            school="Weber State University"
-            graduationDate="December 2018"
-            type="AAS"
-          />
-        </div>
+      <Degree
+        major="Computer Science"
+        school="Weber State University"
+        graduationDate="December 2018"
+        type="AAS"
+      />
 
-        <div className="md:w-1/2 md:pl-2">
-          <Degree
-            major="General Studies"
-            school="Weber State University"
-            graduationDate="May 2018"
-            type="AS"
-          />
-        </div>
-      </div>
+      <Degree
+        major="General Studies"
+        school="Weber State University"
+        graduationDate="May 2018"
+        type="AS"
+      />
     </Section>
 
     <Section title="Skills">
-      <div className="md:flex">
-        <div className="md:w-1/3 md:pr-2">
-          <Skill title="JavaScript (ES6, React, Gatsby, Emotion)" />
-        </div>
-
-        <div className="md:w-1/3 md:px-2">
-          <Skill title="PHP (Laravel)" />
-        </div>
-
-        <div className="md:w-1/3 md:pl-2">
-          <Skill title="SQL (PostgreSQL, MySQL)" />
-        </div>
-      </div>
+      <Skill title="JavaScript (ES6, React, Gatsby, Emotion)" />
+      <Skill title="PHP (Laravel)" />
+      <Skill title="SQL (PostgreSQL, MySQL)" />
     </Section>
 
     <Section title="Portfolio" lastSection>
