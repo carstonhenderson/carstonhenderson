@@ -98,9 +98,11 @@ const IndexPage = () => (
     </Section>
 
     <Section title="Skills">
-      <Skill title="JavaScript (ES6, React, Gatsby, Emotion)" />
+      <Skill title="HTML (HTML5)" />
+      <Skill title="CSS (CSS3, CSS Modules, Emotion" />
+      <Skill title="JavaScript (ES6, React, Gatsby, Next)" />
       <Skill title="PHP (Laravel)" />
-      <Skill title="SQL (PostgreSQL, MySQL)" />
+      <Skill title="Query languages (PostgreSQL, MySQL, GraphQL)" />
     </Section>
 
     <Section title="Portfolio" lastSection>
