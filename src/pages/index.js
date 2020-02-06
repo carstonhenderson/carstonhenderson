@@ -36,7 +36,7 @@ const IndexPage = () => (
         title="Front-end Developer"
         company="Clearlink"
         startDate="April 2019"
-        endDate="Present"
+        endDate="October 2019"
         details={[
           'front-end development using JavaScript, Sass, and PHP',
           'focus on SEO and performance',
@@ -99,7 +99,7 @@ const IndexPage = () => (
 
     <Section title="Skills">
       <Skill title="HTML (HTML5)" />
-      <Skill title="CSS (CSS3, CSS Modules, Emotion" />
+      <Skill title="CSS (CSS3, CSS Modules, Emotion)" />
       <Skill title="JavaScript (ES6, React, Gatsby, Next)" />
       <Skill title="PHP (Laravel)" />
       <Skill title="Query languages (PostgreSQL, MySQL, GraphQL)" />
